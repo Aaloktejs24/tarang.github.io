@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 35px;
+    margin-top: 4px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.logo {
+    margin-left: 80px;
+}
+
+.navsection {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.navbar {
+    background-color: #6439FF;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+    align-content: center;
+    height: 64px;
+}
+
+.navbar .logoword {
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
+}
+
+form {
+    display: flex;
+    margin-left: 120px;
+}
+
+input {
+    width: 500px;
+    height: 35px;
+    padding-left: 120px;
+    border: #000 2px solid;
+    font-size: large;
+    border-right: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+button {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: #000 solid 2px;
+    cursor: pointer;
+    background-color: #4F75FF;
+    width: 50px;
+    height: 35px;
+}
+
+button:hover {
+    background-color: #7693fd;
+}
+
+.rightform {
+    display: flex;
+    width: 506.133px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 30px;
+    font-size: 20px;
+    color: #f9f5f5;
+}
+
+.lang {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.langlogo {
+    margin-top: 3px;
+}
+
+.country img {
+    height: 15px;
+}
+
+.country {
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.close-sidebar-button {
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.open-sidebar-button {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.side-contant {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    height: 900px;
+    width: 350px;
+    background: #ffffff5a;
+    backdrop-filter: blur(20px);
+}
+
+#sidebar-active:checked~.side-contant {
+    left: 0%;
+    transition: 0.75s;
+}
+
+#sidebar-active:not(:checked)~.side-contant {
+    left: -421px;
+    transition: 0.75s;
+}
+
+.edurole {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    gap: 7px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    width: 315px;
+    border-radius: 5px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.edudrpd {
+    margin-left: 150px;
+}
+
+.accinfo {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 62.5px;
+    border: 0.5px rgba(255, 255, 255, 0) solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    gap: 10px;
+    padding-left: 8px;
+}
+
+.netweb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 340px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.abtweb {
+    font-size: 15px;
+    color: #fff;
+    border: #ffffff00 solid 2px;
+    height: 40px;
+    width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    background-color: #6439FF;
+}
+
+.csdiv {
+    background-color: #6439FF;
+    height: 40px;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.csdiv:hover {
+    background-color: #4F75FF;
+}
+.arrodo {
+    padding-left: 77.75px;
+}
+
+.acclo {
+    margin-top: 7px;
+}
+
+.link {
+    display: flex;
+    width: 330px;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 15px;
+    height: 50px;
+}
+
+.sidelink {
+    margin-left: 10px;
+    margin-top: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.side-contant .sidelink a {
+    color: #000000;
+    text-decoration: none;
+    align-content: center;
+    cursor: pointer;
+    margin-left: 7px;
+}
+
+.link:hover {
+    transition: 0.25s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.homelogo {
+    align-items: center;
+}
+
+.navmenu {
+    height: 32px;
+    background-color: #4F75FF;
+    align-content: center;
+    text-align: center;
+}
+
+.navliscont a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-family: Lucida;
+}
+
+.navliscont {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.navad {
+    width: 100%;
+    height: 96px;
+}
+.footer {
+    align-items: center;
+}
+
+.footmenu {
+    background-color: #4F75FF;
+    width: 100%;
+    height: 32px;
+    align-content: center;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.footbar {
+    background-color: #6439FF;
+    width: 100%;
+    height: 254px;
+    color: #ffffff;
+}
+
+.footbar {
+    padding-top: 10px;
+}
+
+.footbar ul {
+    list-style: none;
+    font-size: 14px;
+    height: 149px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+
+}
+
+.coheading,
+.abheading,
+.rnpheading,
+.snoheading,
+.bhagiheading,
+.lnaheading,
+.othheading,
+.addheading {
+    font-weight: 500;
+    width: 194.28px;
+    height: 30px;
+    align-content: center;
+    font-size: 15px;
+    color: #a7a7a7;
+}
+
+.about,
+.rnp,
+.sno,
+.bhagi,
+.lna,
+.oth,
+.add {
+    box-sizing: order-box;
+    border-radius: 2px;
+}
+
+.footcont {
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+}
+
+.soci {
+    display: flex;
+    margin-left: 5px;
+    gap: 16px;
+    align-items: center;
+}
+
+.copy {
+    padding-left: 5px;
+}
+
+.f1pluf2pluf3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    background-color: #00000040;
+    height: 60px;
+}
+
+.copy {
+    margin-right: 10px;
+}
+
+.office {
+    margin-top: 5px;
+}
+
+.helpc {
+    width: 100px;
+    background-color: #4F75FF;
+    text-align: center;
+    height: 30px;
+    display: flexbox;
+    align-content: center;
+    border-radius: 50px;
+}
+
+.helpc a {
+    color: white;
+    text-decoration: none;
+}
+
+.loctag {
+    margin-top: 16.5px;
+    margin-left: 75.135px;
+}

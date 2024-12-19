@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="265mm"
+   height="90mm"
+   viewBox="0 0 265 90"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.38108626"
+     inkscape:cx="1165.0905"
+     inkscape:cy="329.32177"
+     inkscape:window-width="1440"
+     inkscape:window-height="766"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g26" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch1"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#38e3f1;stop-opacity:0.99652779;"
+         offset="0"
+         id="stop1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch1"
+       id="linearGradient1"
+       x1="297.629"
+       y1="659.688"
+       x2="357.629"
+       y2="659.688"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter157"
+       x="-0.048333333"
+       y="0"
+       width="1.0483333"
+       height="1.02">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.000000"
+         flood-color="rgb(218,239,201)"
+         id="feFlood156" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="0.000000"
+         id="feGaussianBlur156" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="-1.100000"
+         dy="1.100000"
+         id="feOffset156" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="offset"
+         in2="flood"
+         id="feComposite156" />
+      <feComposite
+         result="fbSourceGraphic"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite157" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix187" />
+      <feFlood
+         id="feFlood187"
+         result="flood"
+         in="fbSourceGraphic"
+         flood-opacity="0.545098"
+         flood-color="rgb(0,0,0)" />
+      <feGaussianBlur
+         id="feGaussianBlur187"
+         result="blur"
+         in="fbSourceGraphic"
+         stdDeviation="0.000000" />
+      <feOffset
+         id="feOffset187"
+         result="offset"
+         in="blur"
+         dx="-1.800000"
+         dy="1.800000" />
+      <feComposite
+         id="feComposite187"
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset" />
+      <feComposite
+         id="feComposite188"
+         result="comp2"
+         operator="over"
+         in="fbSourceGraphic"
+         in2="comp1" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g26"
+       transform="matrix(0,-1.2162157,1.8040784,0,-1059.3332,451.98106)"
+       style="stroke-width:0.17862">
+      <g
+         id="g25"
+         style="stroke-width:0.177467;fill:url(#linearGradient1);filter:url(#filter157)"
+         transform="matrix(1,0,0,1.0130303,14.000029,-7.6512289)">
+        <polygon
+           style="fill:url(#linearGradient1);stroke-width:0.177467;fill-opacity:1"
+           points="297.629,587.188 357.629,587.188 357.629,732.188 327.629,720.188 297.629,732.188 "
+           id="polygon24" />
+      </g>
+      <polygon
+         style="fill:#461db9;stroke-width:0.17862;fill-opacity:1"
+         points="357.629,587.188 357.629,608.188 371.629,608.188 "
+         id="polygon25"
+         transform="matrix(-1,0,0,1,669.25803,6.8964e-6)" />
+    </g>
+  </g>
+</svg>
