@@ -38,7 +38,7 @@ newsletterForm.addEventListener("submit", (event) => {
     }
 });
 
-// Array of quotes
+// Array of quotes (same as your code)
 const quotes = [
     {
         text: "सपने वो नहीं जो हम सोते वक्त देखते हैं, सपने वो हैं जो हमें सोने नहीं देते।",
@@ -65,28 +65,6 @@ const quotes = [
 // Current quote index
 let currentQuoteIndex = 0;
 
-// Load sounds
-const typingSound = new Audio('typing-sound.mp3'); // Typewriter sound
-const transitionSound = new Audio('transition-sound.mp3'); // Transition sound
-
-// Function to simulate typewriter effect
-function typewriterEffect(element, text, callback) {
-    let i = 0;
-    element.textContent = "";
-    
-    // Play typing sound during typing effect
-    typingSound.play();
-    
-    let interval = setInterval(() => {
-        element.textContent += text[i];
-        i++;
-        if (i === text.length) {
-            clearInterval(interval);
-            if (callback) callback();
-        }
-    }, 100); // Speed of typing effect
-}
-
 // Function to show the next quote
 function showNextQuote() {
     // Increment the quote index
@@ -96,37 +74,27 @@ function showNextQuote() {
     const quoteText = document.getElementById("quote-text");
     const quoteAuthor = document.getElementById("quote-author");
 
-    // Apply fade-out effect to the current quote
-    quoteText.style.opacity = 0;
-    quoteAuthor.style.opacity = 0;
+    // Remove active class to trigger slide-out animation
+    quoteText.classList.remove("slide-active");
+    quoteAuthor.classList.remove("slide-active");
 
-    // Clear current quote text after fade-out to remove it
+    // Delay to allow the slide-out animation to complete
     setTimeout(() => {
-        quoteText.textContent = "";
-        quoteAuthor.textContent = "";
+        // Update the text content
+        quoteText.textContent = `"${quotes[currentQuoteIndex].text}"`;
+        quoteAuthor.textContent = `- ${quotes[currentQuoteIndex].author}`;
 
-        // Play transition sound when the quote transitions
-        transitionSound.play();
-
-        // After fade-out, update the quote and apply fade-in effect
-        setTimeout(() => {
-            // Update the quote text and author
-            typewriterEffect(quoteText, `"${quotes[currentQuoteIndex].text}"`, () => {
-                typewriterEffect(quoteAuthor, `- ${quotes[currentQuoteIndex].author}`);
-            });
-
-            // Apply fade-in effect
-            quoteText.style.opacity = 1;
-            quoteAuthor.style.opacity = 1;
-        }); // Wait for the fade-out effect to complete
-    }); // Wait for the opacity to fade out before clearing text
+        // Add active class to trigger slide-in animation
+        quoteText.classList.add("slide-active");
+        quoteAuthor.classList.add("slide-active");
+    }, 1000); // Match this with the transition duration in CSS
 }
 
-// Automatically shuffle quotes every 7 seconds after typing effect completes
+// Automatically shuffle quotes every 15 seconds
 function startQuoteRotation() {
     setInterval(() => {
         showNextQuote();
-    }, 15000); // 7 seconds interval between quotes
+    }, 5000);
 }
 
 // Initialize with the first quote
@@ -134,17 +102,14 @@ window.onload = () => {
     const quoteText = document.getElementById("quote-text");
     const quoteAuthor = document.getElementById("quote-author");
 
-    // Set initial text content for first quote
+    // Set initial text content for the first quote
     quoteText.textContent = `"${quotes[0].text}"`;
     quoteAuthor.textContent = `- ${quotes[0].author}`;
 
-    // Apply initial fade-in effect
-    quoteText.style.transition = "opacity 1s ease";
-    quoteAuthor.style.transition = "opacity 1s ease";
-    quoteText.style.opacity = 1;
-    quoteAuthor.style.opacity = 1;
+    // Apply initial slide-in effect
+    quoteText.classList.add("slide-active");
+    quoteAuthor.classList.add("slide-active");
 
     // Start the automatic quote rotation
     startQuoteRotation();
 };
-7

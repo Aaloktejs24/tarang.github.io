@@ -72,6 +72,10 @@ body {
     display: flex;
 }
 
+.logofileb {
+    display: none;
+}
+
 .logo img {
     height: 35px;
     margin-top: 4px;
@@ -91,7 +95,7 @@ form {
 }
 
 input {
-    width: 500px;
+    width: 35.7142vw;
     height: 35px;
     border: #0056b3 2px solid;
     font-size: 15px;
@@ -155,9 +159,17 @@ button:hover {
 }
 
 .navmenu {
-    height: 32px;
     background-color: #28a745;
-    padding: 0 35px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.navmenu::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, and Edge */
 }
 
 .navlist {
@@ -166,12 +178,13 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: 1440px;
+    padding: 4px 30px;
 }
 
 .navlist a {
     text-decoration: none;
     font-weight: 500;
-    padding: 4px 7px;
     color: #ffffff;
 }
 
@@ -189,7 +202,7 @@ button:hover {
 .goodwordsfile {
     display: flex;
     justify-content: space-between;
-    height: 480px;
+    height: 33.333vw;
 }
 
 .goodwords ul {
@@ -199,20 +212,15 @@ button:hover {
 }
 
 .goodwords ul li {
-    background-image: url(drawing.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 120px;
     display: flex;
     justify-content: center;
     height: 40px;
     font-size: 20px;
     font-weight: 400;
     font-family: rozhaOne-Regular;
-}
-
-.goodwords ul li:nth-child(odd) {
-    color: #041c7d;
+    color: white;
 }
 
 .updates {
@@ -221,7 +229,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
+    font-size: 6.94vw;
     z-index: 1;
     background-image: url(abcde.jpg);
     background-size: cover;
@@ -233,9 +241,9 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 60px 60px;
+    padding: 4.166666vw;
     background-color: #f9f9f9;
-    margin: 60px 120px;
+    margin: 4.16666vw 8.333333vw;
     /* Light background for the card section */
 }
 
@@ -288,100 +296,59 @@ button:hover {
 
 /* Quotation Section */
 .quotation-section {
-    padding: 60px 60px;
+    padding: 4.166666vw;
     background-color: #f9f9f9;
     text-align: center;
-    margin: 60px 120px;
+    margin: 4.166666vw 8.33333333vw;
     text-overflow: hidden;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     font-size: 2rem;
     color: #333;
     margin-bottom: 30px;
-  }
-  
-  .quote-card {
+}
+
+.quote-card {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     display: inline-block;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     height: 80px;
-  }
-  
-  .quote-text {
+}
+
+.quote-text {
     font-size: 1.2rem;
     color: #555;
     font-style: italic;
     margin-bottom: 15px;
-  }
-  
-  .quote-author {
+}
+
+.quote-author {
     font-size: 1rem;
     color: #0078d7;
     font-weight: bold;
-  }
-  
-
-.scienceque ul {
-    list-style: none;
 }
 
-
-.list1 {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2px;
+.side-bar-active {
+    display: none;
 }
 
-
-.list1 li {
-    width: 686.5px;
-    height: 225px;
-}
-
-.cvphoto img,
-.einphoto img {
-    height: 186px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border: white 2px solid;
-    margin: 12.5px 12.5px 12.5px 12.5px;
-    padding: 5px 5px 5px 5px;
-    backdrop-filter: blur(10px);
-}
-
-#cvraman,
-#eEinstine {
-    display: flex;
-}
-
-#cvraman {
-    padding-right: 2px;
-}
-
-.cvword {
-    color: rgb(255, 255, 255);
-    margin-bottom: 5px;
-}
-
-.cvword .ext {
-    padding-left: 5px;
-    display: inline-block;
-}
-
-.sciname {
-    color: white;
-    text-align: end;
-    margin-right: 15px;
-    margin-top: 5px;
-    width: fit-content;
-    margin-left: 220px;
-}
-
-.cvfile {
-    align-content: center;
+@media (max-width:1420px) {
+    .side-bar-active,
+    .logofileb {
+        display: block;
+    }
+    .logofile,
+    .lang,
+    #bhasha,
+    .country,
+    #notification,
+    .userid,
+    .logowordb {
+        display: none;
+    }
 }

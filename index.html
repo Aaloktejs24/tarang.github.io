@@ -11,7 +11,7 @@
     <div>
       <div class="navsection">
         <ul class="navbar">
-          <li style="display: none">
+          <li class="side-bar-active">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="30px"
@@ -52,7 +52,13 @@
               </button>
             </form>
           </li>
-          <li>
+          <li class="logofileb">
+            <a href="logo.png" class="logo">
+              <img src="Designer.png" alt="logo" />
+            </a>
+            <div class="logowordb">तरंग</div>
+          </li>
+          <li id="bhasha">
             <div class="lang">
               <div class="langlogo">
                 <svg
@@ -87,7 +93,7 @@
               />
             </svg>
           </li>
-          <li>
+          <li id="notification">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -156,15 +162,15 @@
         <div
           style="
             z-index: 9;
-            width: 1360px;
+            width: 94.44444vw;
             display: flex;
             position: absolute;
             justify-content: space-between;
-            padding: 40px;
+            padding: 2.7777vw;
           "
         >
           <div class="bach">
-            <img style="height: 120px" src="bach.svg" alt="bach" />
+            <img style="height: 8.3333vw" src="bach.svg" alt="bach" />
           </div>
           <div class="goodwords">
             <ul>
@@ -178,7 +184,7 @@
           <div
             style="
               background-color: #0056b39e;
-              padding: 20px 90px;
+              padding: 1.388vw 6.25vw;
               font-weight: 900;
               color: #00ff3c;
               font-family: yatraOne;
@@ -236,8 +242,8 @@
       <div
         style="
           background-color: #f9f9f9;
-          padding: 60px 60px;
-          margin: 60px 120px;
+          padding: 4.16666vw;
+          margin: 4.1666666vw 8.3333333333333vw;
         "
       >
         <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
@@ -250,6 +256,7 @@
               border-radius: 8px;
               padding: 20px;
               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              min-width: 300px;
             "
           >
             <h2
@@ -300,6 +307,7 @@
               border-radius: 8px;
               padding: 20px;
               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              min-width: 300px;
             "
           >
             <h2
@@ -395,11 +403,10 @@
       <section class="quotation-section">
         <h2 class="section-title">महान व्यक्तियों के अनमोल वचन</h2>
         <div id="quote-display" class="quote-card">
-          <p class="quote-text" id="quote-text">
-            "सपने वो नहीं जो हम सोते वक्त देखते हैं, सपने वो हैं जो हमें सोने
-            नहीं देते।"
+          <p class="quote-text slide" id="quote-text">
+            "सपने वो नहीं जो हम सोते वक्त देखते हैं, सपने वो हैं जो हमें सोने नहीं देते।"
           </p>
-          <h4 class="quote-author" id="quote-author">
+          <h4 class="quote-author slide" id="quote-author">
             - डॉ. ए.पी.जे. अब्दुल कलाम
           </h4>
         </div>
