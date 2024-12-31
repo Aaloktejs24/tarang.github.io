@@ -337,6 +337,11 @@ button:hover {
     display: none;
 }
 
+#footercontent {
+    color: #00ff3c;
+    margin-bottom: 10px;
+}
+
 @media (max-width:1420px) {
 
     .side-bar-active,
@@ -353,5 +358,9 @@ button:hover {
     .logowordb,
     #notification {
         display: none;
+    }
+
+    #footercontent {
+        margin-bottom: 5px;
     }
 }
