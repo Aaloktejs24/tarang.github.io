@@ -239,7 +239,7 @@ button:hover {
 /* Card Container */
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 20px;
     padding: 4.166666vw;
     background-color: #f9f9f9;
@@ -338,17 +338,20 @@ button:hover {
 }
 
 @media (max-width:1420px) {
+
     .side-bar-active,
     .logofileb {
         display: block;
     }
-    .logofile,
+
     .lang,
-    #bhasha,
-    .country,
-    #notification,
     .userid,
-    .logowordb {
+    #bhasha,
+    .about,
+    .country,
+    .logofile,
+    .logowordb,
+    #notification {
         display: none;
     }
 }
