@@ -424,4 +424,8 @@ button {
     .herocontainer {
         height: 80vw;
     }
+
+    .updates {
+        font-size: 40px;
+    }
 }
