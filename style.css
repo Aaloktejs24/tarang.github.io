@@ -203,10 +203,23 @@ button {
     background-color: #0056b3;
 }
 
-.goodwordsfile {
+.herocontainer {
     display: flex;
     justify-content: space-between;
     height: 33.333vw;
+}
+
+.subherocontainer {
+    z-index: 9;
+    width: 94.44444vw;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 2.7777vw;
+}
+
+.bach img {
+    height: 8.3333vw
 }
 
 .goodwords ul {
@@ -216,11 +229,6 @@ button {
 }
 
 .goodwords ul li {
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    height: 40px;
     font-size: 20px;
     font-weight: 400;
     font-family: rozhaOne-Regular;
@@ -238,6 +246,13 @@ button {
     background-image: url(abcde.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.subupdates {
+    padding: 1.388vw 6.25vw;
+    font-weight: 900;
+    color: #00ff3c;
+    font-family: yatraOne;
 }
 
 /* Card Container */
@@ -400,6 +415,10 @@ button {
     }
 
     .aboutus h1 {
-        margin-bottom: 10px;
+        margin-bottom: 7px;
+    }
+
+    .herocontainer {
+        height: 60vh;
     }
 }
