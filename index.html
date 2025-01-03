@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tarang</title>
-    <link rel="icon" type="image/x-icon" href="designer.png?v=2" />
+    <title>तरंग</title>
+    <link rel="icon" type="image/x-icon" href="logo.png" />
     <link rel="stylesheet" href="style.css?v=2" />
   </head>
   <body>
@@ -48,8 +48,9 @@
                 type="search"
                 name="services"
                 placeholder="हमारे उत्पाद और सेवाओं का अन्वेषण करें..."
+                class="searchinput"
               />
-              <button type="submit">
+              <button type="submit" class="searchbutton">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
@@ -147,18 +148,9 @@
       </div>
       <div class="navad"></div>
       <div class="herocontainer">
-        <div
-          style="
-            z-index: 9;
-            width: 94.44444vw;
-            display: flex;
-            position: absolute;
-            justify-content: space-between;
-            padding: 2.7777vw;
-          "
-        >
+        <div class="subherocontainer">
           <div class="bach">
-            <img style="height: 8.3333vw" src="bach.svg" alt="bach" />
+            <img src="bach.svg" alt="bach" />
           </div>
           <div class="goodwords">
             <ul>
@@ -169,16 +161,7 @@
           </div>
         </div>
         <div class="updates">
-          <div
-            style="
-              padding: 1.388vw 6.25vw;
-              font-weight: 900;
-              color: #00ff3c;
-              font-family: yatraOne;
-            "
-          >
-            स्वागतम्
-          </div>
+          <div class="subupdates">स्वागतम्</div>
         </div>
       </div>
       <section
@@ -495,35 +478,15 @@
               type="email"
               id="newsletter-email"
               placeholder="अपना ईमेल दर्ज करें"
-              style="
-                padding: 10px;
-                width: 70%;
-                margin-right: 10px;
-                border: 1px solid #28a745;
-                background-color: #ffffff;
-                color: #000000;
-              "
+              class="newsletter-input"
               required
             />
-            <button
-              type="submit"
-              style="
-                background-color: #28a745;
-                color: #ffffff;
-                padding: 5px 10px;
-                border: none;
-                cursor: pointer;
-                width: 112px;
-                font-size: small;
-              "
-            >
-              सदस्यता लें
-            </button>
+            <button type="submit" class="newsletter-button">सदस्यता लें</button>
           </form>
 
           <p
             id="newsletter-response"
-            style="font-size: 14px; color: #28a745; margin-top: 10px"
+            style="font-size: 14px; color: #00ff3c; margin-top: 10px"
           ></p>
         </div>
       </div>

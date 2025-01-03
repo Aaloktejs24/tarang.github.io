@@ -42,6 +42,7 @@
     margin: 0;
     padding: 0;
     font-family: "Times New Roman", Times, serif;
+    box-sizing: border-box;
 }
 
 /* General Styles */
@@ -150,7 +151,7 @@ body {
 
 .menu-list {
     list-style: none;
-    width: 1380px;
+    width: 1440px;
     display: flex;
     justify-content: space-between;
     padding: 4px 2.0833333333vw;
@@ -164,7 +165,8 @@ body {
 }
 
 .menu-list a:hover {
-    color: #007bff;
+    border-bottom: #fff 2px solid;
+    padding-bottom: 2px;
 }
 
 /* Input and Form Styles */
@@ -173,7 +175,7 @@ form {
     display: flex;
 }
 
-input {
+.searchinput {
     width: 35.7142vw;
     height: 35px;
     border: #28a745 2px solid;
@@ -185,7 +187,7 @@ input {
     outline: none;
 }
 
-button {
+.searchbutton {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     border: none;
@@ -245,7 +247,7 @@ button {
     align-items: center;
     font-size: 6.94vw;
     z-index: 1;
-    background-image: url(abcde.jpg);
+    background-image: url(update.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -256,6 +258,23 @@ button {
     font-weight: 900;
     color: #00ff3c;
     font-family: yatraOne;
+}
+
+.aboutus {
+    width: 62.5vw;
+    margin: 0 auto;
+    text-align: center
+}
+
+.aboutus h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aboutus p {
+    font-size: 1.2em;
+    line-height: 1.6
 }
 
 /* Card Container */
@@ -360,26 +379,10 @@ button {
     display: none;
 }
 
+
 #footercontent {
     color: #00ff3c;
     margin-bottom: 10px;
-}
-
-.aboutus {
-    width: 62.5vw;
-    margin: 0 auto;
-    text-align: center
-}
-
-.aboutus h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px
-}
-
-.aboutus p {
-    font-size: 1.2em;
-    line-height: 1.6
 }
 
 .aboutus a {
@@ -392,6 +395,27 @@ button {
     font-size: 1em;
     font-weight: 600;
     margin-top: 20px;
+}
+
+.newsletter-input {
+    padding: 5px 10px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #28a745;
+    background-color: #ffffff;
+    color: #0078d7;
+    font-size: small;
+    outline: none;
+}
+
+.newsletter-button {
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 112px;
+    font-size: small;
 }
 
 @media (max-width:1420px) {
