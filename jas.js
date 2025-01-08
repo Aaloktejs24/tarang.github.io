@@ -1,3 +1,38 @@
+let lastScrollTop = 0; // Tracks the previous scroll position
+const header = document.querySelector('.navigation');;
+const activationDistance = 150; // Minimum scroll distance to activate the effect
+const scrollThreshold = 100; // Distance to scroll before reapplying the effect
+let effectActive = false; // To determine if the effect is active
+let lastThresholdCheck = 0; // Last scroll position where the threshold logic was applied
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+
+    // Step 1: Activate the effect only after the activation distance is reached
+    if (currentScroll > activationDistance) {
+        effectActive = true;
+    } else {
+        effectActive = false;
+        header.classList.remove('hidden'); // Show header below activation distance
+    }
+
+    // Step 2: Apply hide/show logic if effect is active
+    if (effectActive && Math.abs(currentScroll - lastThresholdCheck) > scrollThreshold) {
+        if (currentScroll > lastScrollTop) {
+            // Scroll Down: Hide the header
+            header.classList.add('hidden');
+        } else {
+            // Scroll Up: Show the header
+            header.classList.remove('hidden');
+        }
+
+        // Update the last threshold check
+        lastThresholdCheck = currentScroll;
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+});
+
 const carouselImages = document.querySelector('.carousel-images');
 const totalImages = document.querySelectorAll('.carousel-item').length;
 
@@ -6,30 +41,30 @@ let autoSlideInterval; // To store the interval ID
 
 // Slide to the next image
 function slideToNextImage() {
-  currentIndex = (currentIndex + 1) % totalImages;
-  updateCarouselPosition();
+    currentIndex = (currentIndex + 1) % totalImages;
+    updateCarouselPosition();
 }
 
 // Slide to the previous image
 function slideToPreviousImage() {
-  currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-  updateCarouselPosition();
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    updateCarouselPosition();
 }
 
 // Update the carousel's position
 function updateCarouselPosition() {
-  const newTransform = -currentIndex * 100; // Slide by 100% of the container width
-  carouselImages.style.transform = `translateX(${newTransform}%)`;
+    const newTransform = -currentIndex * 100; // Slide by 100% of the container width
+    carouselImages.style.transform = `translateX(${newTransform}%)`;
 }
 
 // Start the automatic sliding
 function startAutoSlide() {
-  autoSlideInterval = setInterval(slideToNextImage, 3000); // Slide every 3 seconds
+    autoSlideInterval = setInterval(slideToNextImage, 3000); // Slide every 3 seconds
 }
 
 // Stop the automatic sliding
 function stopAutoSlide() {
-  clearInterval(autoSlideInterval);
+    clearInterval(autoSlideInterval);
 }
 
 // Add event listeners to stop auto-sliding when hovering over the carousel
@@ -159,26 +194,26 @@ window.onload = () => {
 // Feedback Form Submission Handling
 document.getElementById("feedback-form").addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent form from refreshing the page
-  
+
     // Get the feedback text
     const feedbackText = document.getElementById("feedback-text").value;
-  
+
     // Validate feedback input
     if (feedbackText.trim() === "") {
-      document.getElementById("feedback-response").innerText =
-        "कृपया अपनी प्रतिक्रिया लिखें।";
-      return;
+        document.getElementById("feedback-response").innerText =
+            "कृपया अपनी प्रतिक्रिया लिखें।";
+        return;
     }
-  
+
     // Simulate a successful submission (replace with server-side logic if needed)
     document.getElementById("feedback-response").innerText =
-      "धन्यवाद! आपकी प्रतिक्रिया सफलतापूर्वक सबमिट हो गई है।";
-  
+        "धन्यवाद! आपकी प्रतिक्रिया सफलतापूर्वक सबमिट हो गई है।";
+
     // Clear the input field
     document.getElementById("feedback-text").value = "";
-  
+
     // Optional: Add a timeout to clear the message
     setTimeout(() => {
-      document.getElementById("feedback-response").innerText = "";
+        document.getElementById("feedback-response").innerText = "";
     }, 5000); // Clear after 5 seconds
-  });
+});

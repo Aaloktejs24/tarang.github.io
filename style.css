@@ -21,14 +21,15 @@ body {
 
 /* Navbar Styles */
 .navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #0056b3;
     color: white;
     position: fixed;
     width: 100%;
     z-index: 3;
+    transition: transform 0.3s ease;
+}
+
+.hidden {
+    transform: translateY(-100%);
 }
 
 .navigation__bar {
@@ -38,6 +39,7 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 64px;
+    background-color: #0056b3;
 }
 
 .navigation__bar li {
@@ -158,14 +160,6 @@ form {
     background-color: #28a745;
     width: 50px;
     height: 35px;
-}
-
-
-
-.navad {
-    width: 100%;
-    height: 96px;
-    background-color: #0056b3;
 }
 
 .herocontainer {
@@ -731,7 +725,8 @@ form {
 }
 
 /* Feedback Response */
-#feedback-response, #newsletter-response {
+#feedback-response,
+#newsletter-response {
     font-size: 14px;
     color: #00ff3c;
     margin-top: 10px;
