@@ -1,3 +1,45 @@
+const carouselImages = document.querySelector('.carousel-images');
+const totalImages = document.querySelectorAll('.carousel-item').length;
+
+let currentIndex = 0; // Track the current slide
+let autoSlideInterval; // To store the interval ID
+
+// Slide to the next image
+function slideToNextImage() {
+  currentIndex = (currentIndex + 1) % totalImages;
+  updateCarouselPosition();
+}
+
+// Slide to the previous image
+function slideToPreviousImage() {
+  currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+  updateCarouselPosition();
+}
+
+// Update the carousel's position
+function updateCarouselPosition() {
+  const newTransform = -currentIndex * 100; // Slide by 100% of the container width
+  carouselImages.style.transform = `translateX(${newTransform}%)`;
+}
+
+// Start the automatic sliding
+function startAutoSlide() {
+  autoSlideInterval = setInterval(slideToNextImage, 3000); // Slide every 3 seconds
+}
+
+// Stop the automatic sliding
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+// Add event listeners to stop auto-sliding when hovering over the carousel
+const carousel = document.querySelector('.carousel');
+carousel.addEventListener('mouseenter', stopAutoSlide);
+carousel.addEventListener('mouseleave', startAutoSlide);
+
+// Start auto-sliding on page load
+startAutoSlide();
+
 // Array of science facts
 const facts = [
     "वैज्ञानिक शोध के अनुसार, शहद एकमात्र ऐसा खाद्य पदार्थ है जो कभी खराब नहीं होता।",
@@ -113,3 +155,30 @@ window.onload = () => {
     // Start the automatic quote rotation
     startQuoteRotation();
 };
+
+// Feedback Form Submission Handling
+document.getElementById("feedback-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent form from refreshing the page
+  
+    // Get the feedback text
+    const feedbackText = document.getElementById("feedback-text").value;
+  
+    // Validate feedback input
+    if (feedbackText.trim() === "") {
+      document.getElementById("feedback-response").innerText =
+        "कृपया अपनी प्रतिक्रिया लिखें।";
+      return;
+    }
+  
+    // Simulate a successful submission (replace with server-side logic if needed)
+    document.getElementById("feedback-response").innerText =
+      "धन्यवाद! आपकी प्रतिक्रिया सफलतापूर्वक सबमिट हो गई है।";
+  
+    // Clear the input field
+    document.getElementById("feedback-text").value = "";
+  
+    // Optional: Add a timeout to clear the message
+    setTimeout(() => {
+      document.getElementById("feedback-response").innerText = "";
+    }, 5000); // Clear after 5 seconds
+  });
