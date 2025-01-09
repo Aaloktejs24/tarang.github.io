@@ -162,6 +162,14 @@ form {
     height: 35px;
 }
 
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
 .herocontainer {
     display: flex;
     justify-content: space-between;
@@ -609,7 +617,7 @@ form {
     width: 100px;
     height: 100px;
     margin-bottom: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #0056b3;
 }
 
 /* Team Member Name */

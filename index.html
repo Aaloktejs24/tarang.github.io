@@ -127,298 +127,389 @@
         <!-- Navigation Menu -->
         <div class="navigation-menu">
           <ul class="menu-list">
-            <li><a href="index.html">मुख्य-पृष्ठ</a></li>
-            <li><a href="prayogkaksha-index.html">प्रयोग कक्ष</a></li>
-            <li><a href="prakashan-index.html">प्रकाशन</a></li>
-            <li><a href="sansadhan-index.html">संसाधन</a></li>
-            <li><a href="pariyojnayen-index.html">परियोजनाएं</a></li>
-            <li><a href="vaigyanikp-index.html">वैज्ञानिक पत्रिकाएं</a></li>
-            <li><a href="aapkasamuh-index.html">आपका समूह</a></li>
-            <li><a href="samiksha-index.html">समीक्षाएं</a></li>
-            <li><a href="chitrashala-index.html">चित्रशाला</a></li>
             <li>
-              <a href="anusandhannaitidisa-index.html"
+              <a href="#home" class="nav-link" data-section="home"
+                >मुख्य-पृष्ठ</a
+              >
+            </li>
+            <li>
+              <a href="#prayogkaksha" class="nav-link" data-section="prayogkaksha"
+                >प्रयोग कक्ष</a
+              >
+            </li>
+            <li>
+              <a href="#prakashan" class="nav-link" data-section="prakashan">प्रकाशन</a>
+            </li>
+            <li><a href="#sansadhan" class="nav-link" data-section="sansadhan">संसाधन</a></li>
+            <li>
+              <a href="#pariyojnayen" class="nav-link" data-section="pariyojnayen">परियोजनाएं</a>
+            </li>
+            <li>
+              <a href="##aapkasamuh" class="nav-link" data-section="aapkasamuh">आपका समूह</a>
+            </li>
+            <li><a href="#samiksha" class="nav-link" data-section="samiksha">समीक्षाएं</a></li>
+            <li>
+              <a href="#chitrashala" class="nav-link" data-section="chitrashala">चित्रशाला</a>
+            </li>
+            <li>
+              <a href="#anusandhannaitidisa" class="nav-link" data-section="anusandhannaitidisa"
                 >अनुसंधान नैतिकता दिशानिर्देश</a
               >
             </li>
             <li>
-              <a href="navacharnvicharmanch-index.html">नवाचार एवं विचार मंच</a>
+              <a
+                href="#navacharnvicharmanch" class="nav-link"
+                data-section="navacharnvicharmanch"
+                >नवाचार एवं विचार मंच</a
+              >
             </li>
-            <li><a href="upkaranpustika-index.html">उपकरण पुस्तिका</a></li>
-            <li><a href="nirdharitprayog-index.html">निर्धारित प्रयोग</a></li>
-            <li><a href="samachar-index.html">समाचार</a></li>
+            <li>
+              <a href="#upkaranpustika" class="nav-link" data-section="upkaranpustika"
+                >उपकरण पुस्तिका</a
+              >
+            </li>
+            <li>
+              <a href="#nirdharitprayog" class="nav-link" data-section="nirdharitprayog"
+                >निर्धारित प्रयोग</a
+              >
+            </li>
+            <li><a href="#samachar" class="nav-link" data-section="samachar">समाचार</a></li>
           </ul>
         </div>
       </div>
-      <div style="height: 96px; background-color: #28a745;"></div>
-      <div class="herocontainer">
-        <div class="subherocontainer">
-          <div class="bach">
-            <img src="bach.svg" alt="bach" />
-          </div>
-          <div class="goodwords">
-            <ul>
-              <li>अध्ययन</li>
-              <li>प्रयोग</li>
-              <li>कौशल</li>
-            </ul>
-          </div>
-        </div>
-        <section class="carousel">
-          <button class="carousel-btn prev" onclick="slideToPreviousImage()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="40px"
-              viewBox="0 -960 960 960"
-              width="40px"
-              fill="#fff"
-            >
-              <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
-            </svg>
-          </button>
-          <div class="carousel-images">
-            <div class="carousel-item">
-              <div class="subupdates">स्वागतम्</div>
+      <div style="height: 96px; background-color: #28a745"></div>
+      <div id="home" class="section active">
+        <div class="herocontainer">
+          <div class="subherocontainer">
+            <div class="bach">
+              <img src="bach.svg" alt="bach" />
             </div>
-            <img class="carousel-item" src="webbac2.jpg" alt="founder" />
-            <img class="carousel-item" src="webbac1.jpg" alt="founder" />
-            <img class="carousel-item" src="webbac.jpg" alt="founder" />
+            <div class="goodwords">
+              <ul>
+                <li>अध्ययन</li>
+                <li>प्रयोग</li>
+                <li>कौशल</li>
+              </ul>
+            </div>
           </div>
-          <button class="carousel-btn next" onclick="slideToNextImage()">
-            <svg
+          <section class="carousel">
+            <button class="carousel-btn prev" onclick="slideToPreviousImage()">
               <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="40px"
-              viewBox="0 -960 960 960"
-              width="40px"
-              fill="#fff"
-            >
-              <path
-                d="M521.33-480.67 328-674l47.33-47.33L616-480.67 375.33-240 328-287.33l193.33-193.34Z"
-              />
-            </svg>
-          </button>
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#fff"
+              >
+                <path
+                  d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"
+                />
+              </svg>
+            </button>
+            <div class="carousel-images">
+              <div class="carousel-item">
+                <div class="subupdates">स्वागतम्</div>
+              </div>
+              <img class="carousel-item" src="webbac2.jpg" alt="founder" />
+              <img class="carousel-item" src="webbac1.jpg" alt="founder" />
+              <img class="carousel-item" src="webbac.jpg" alt="founder" />
+            </div>
+            <button class="carousel-btn next" onclick="slideToNextImage()">
+              <svg
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#fff"
+              >
+                <path
+                  d="M521.33-480.67 328-674l47.33-47.33L616-480.67 375.33-240 328-287.33l193.33-193.34Z"
+                />
+              </svg>
+            </button>
+          </section>
+        </div>
+        <section class="about">
+          <div class="aboutus">
+            <h1>तरंग</h1>
+            <p>
+              तरंग एक अत्याधुनिक अग्रणी विज्ञान प्रयोगशाला है, जहां विज्ञान को
+              नई तकनीक और नवाचार के साथ विस्तार दिया जाता है।
+              <span class="haboutus">
+                यह प्लेटफॉर्म छात्रों, शिक्षकों और शोधकर्ताओं को एक व्यावहारिक
+                प्रयोगशाला का अनुभव उनके डिजिटल उपकरणों पर ही प्रदान करता है।
+                हमारा उद्देश्य विज्ञान की शिक्षा और अनुसंधान को हर व्यक्ति के
+                लिए सरल और सुलभ बनाना है।
+              </span>
+            </p>
+            <a href="#"> अधिक जानकारी → </a>
+          </div>
         </section>
-      </div>
-      <section class="about">
-        <div class="aboutus">
-          <h1>तरंग</h1>
-          <p>
-            तरंग एक अत्याधुनिक अग्रणी विज्ञान प्रयोगशाला है, जहां विज्ञान को नई
-            तकनीक और नवाचार के साथ विस्तार दिया जाता है।
-            <span class="haboutus">
-              यह प्लेटफॉर्म छात्रों, शिक्षकों और शोधकर्ताओं को एक व्यावहारिक
-              प्रयोगशाला का अनुभव उनके डिजिटल उपकरणों पर ही प्रदान करता है।
-              हमारा उद्देश्य विज्ञान की शिक्षा और अनुसंधान को हर व्यक्ति के लिए
-              सरल और सुलभ बनाना है।
-            </span>
-          </p>
-          <a href="#"> अधिक जानकारी → </a>
-        </div>
-      </section>
-      <main class="card-container">
-        <div class="card">
-          <h3 class="card-title">भौतिकी</h3>
-          <p class="card-text">
-            “प्रयोग, अनुकरण और अंतरक्रियात्मक सत्र के माध्यम से भौतिकी के
-            सिद्धांत सीखें।”
-          </p>
-          <a href="#" class="btn">अधिक जानकारी →</a>
-        </div>
-        <div class="card">
-          <h3 class="card-title">रसायन</h3>
-          <p class="card-text">
-            “रासायनिक अभिक्रियाओं और आवर्त सारणी को प्रयोगशाला सत्रों के साथ
-            समझें।”
-          </p>
-          <a href="#" class="btn">अधिक जानकारी →</a>
-        </div>
-        <div class="card">
-          <h3 class="card-title">जीव विज्ञान</h3>
-          <p class="card-text">
-            “जीवों की संरचना और कार्यप्रणाली को केस स्टडी और माइक्रोस्कोपिक
-            अभ्यास से जानें।”
-          </p>
-          <a href="#" class="btn">अधिक जानकारी →</a>
-        </div>
-        <div class="card">
-          <h3 class="card-title">गणित</h3>
-          <p class="card-text">
-            “समीकरण, ज्यामिति और डेटा विश्लेषण में दक्षता बढ़ाएं।”
-          </p>
-          <a href="#" class="btn">अधिक जानकारी →</a>
-        </div>
-        <div class="card">
-          <h3 class="card-title">हिंदी</h3>
-          <p class="card-text">
-            “व्याकरण, रचनात्मक लेखन और साहित्यिक कृतियों का अध्ययन करें।”
-          </p>
-          <a href="#" class="btn">अधिक जानकारी →</a>
-        </div>
-        <div class="card">
-          <h3 class="card-title">भोजपुरी</h3>
-          <p class="card-text">
-            “भोजपुरी व्याकरण, शब्दावली और सांस्कृतिक धरोहर को सीखें।”
-          </p>
-          <a href="#" class="btn">अधिक जानकारी →</a>
-        </div>
-      </main>
-      <section class="quotation-section">
-        <h2 class="section-title">महान व्यक्तियों के अनमोल वचन</h2>
-        <div id="quote-display" class="quote-card">
-          <p class="quote-text slide" id="quote-text">
-            "सपने वो नहीं जो हम सोते वक्त देखते हैं, सपने वो हैं जो हमें सोने
-            नहीं देते।"
-          </p>
-          <h4 class="quote-author slide" id="quote-author">
-            - डॉ. ए.पी.जे. अब्दुल कलाम
-          </h4>
-        </div>
-      </section>
-      <section class="vnm_section">
-        <div class="vnm_container">
-          <!-- Vision Card -->
-          <div class="vision">
-            <h2>हमारी दृष्टि</h2>
-            <p>
-              तरंग एक ऐसी दुनिया बनाने की कल्पना करता है जहां विज्ञान हर व्यक्ति
-              के लिए सुलभ और उपयोगी हो। आधुनिक प्रयोगशालाओं के माध्यम से, हम
-              शिक्षा और अनुसंधान को उत्तम बनाने का प्रयास करते हैं।
+        <main class="card-container">
+          <div class="card">
+            <h3 class="card-title">भौतिकी</h3>
+            <p class="card-text">
+              “प्रयोग, अनुकरण और अंतरक्रियात्मक सत्र के माध्यम से भौतिकी के
+              सिद्धांत सीखें।”
             </p>
-            <div class="vision_button">
-              <button>अधिक जानकारी →</button>
-            </div>
+            <a href="#" class="btn">अधिक जानकारी →</a>
           </div>
-
-          <!-- Mission Card -->
-          <div class="mission">
-            <h2>हमारा मिशन</h2>
-            <p>
-              हमारा मिशन ऐसी दुनिया का निर्माण करना है जहां विज्ञान की शिक्षा
-              सभी के लिए सुलभ हो। हम छात्रों को अपने अनुसंधान और ज्ञान को
-              प्रोत्साहित करने का मौका प्रदान करते हैं।
+          <div class="card">
+            <h3 class="card-title">रसायन</h3>
+            <p class="card-text">
+              “रासायनिक अभिक्रियाओं और आवर्त सारणी को प्रयोगशाला सत्रों के साथ
+              समझें।”
             </p>
-            <div class="mission_button" style="margin-top: 45px">
-              <button>अधिक जानकारी →</button>
-            </div>
+            <a href="#" class="btn">अधिक जानकारी →</a>
           </div>
-        </div>
-      </section>
-      <section class="founder-section">
-        <div class="container">
-          <!-- Founder Details -->
-          <div class="founder-content">
-            <div class="founder-image">
-              <img src="founder.png" alt="Founder Image" />
-            </div>
-            <div class="founder-details">
-              <h1>हमारे संस्थापक</h1>
+          <div class="card">
+            <h3 class="card-title">जीव विज्ञान</h3>
+            <p class="card-text">
+              “जीवों की संरचना और कार्यप्रणाली को केस स्टडी और माइक्रोस्कोपिक
+              अभ्यास से जानें।”
+            </p>
+            <a href="#" class="btn">अधिक जानकारी →</a>
+          </div>
+          <div class="card">
+            <h3 class="card-title">गणित</h3>
+            <p class="card-text">
+              “समीकरण, ज्यामिति और डेटा विश्लेषण में दक्षता बढ़ाएं।”
+            </p>
+            <a href="#" class="btn">अधिक जानकारी →</a>
+          </div>
+          <div class="card">
+            <h3 class="card-title">हिंदी</h3>
+            <p class="card-text">
+              “व्याकरण, रचनात्मक लेखन और साहित्यिक कृतियों का अध्ययन करें।”
+            </p>
+            <a href="#" class="btn">अधिक जानकारी →</a>
+          </div>
+          <div class="card">
+            <h3 class="card-title">भोजपुरी</h3>
+            <p class="card-text">
+              “भोजपुरी व्याकरण, शब्दावली और सांस्कृतिक धरोहर को सीखें।”
+            </p>
+            <a href="#" class="btn">अधिक जानकारी →</a>
+          </div>
+        </main>
+        <section class="quotation-section">
+          <h2 class="section-title">महान व्यक्तियों के अनमोल वचन</h2>
+          <div id="quote-display" class="quote-card">
+            <p class="quote-text slide" id="quote-text">
+              "सपने वो नहीं जो हम सोते वक्त देखते हैं, सपने वो हैं जो हमें सोने
+              नहीं देते।"
+            </p>
+            <h4 class="quote-author slide" id="quote-author">
+              - डॉ. ए.पी.जे. अब्दुल कलाम
+            </h4>
+          </div>
+        </section>
+        <section class="vnm_section">
+          <div class="vnm_container">
+            <!-- Vision Card -->
+            <div class="vision">
+              <h2>हमारी दृष्टि</h2>
               <p>
-                <strong style="color: #28a745">आलोक तेजस</strong>, 'तरंग' के
-                संस्थापक, एक प्रेरक वैज्ञानिक और शिक्षक हैं। उन्होंने विज्ञान और
-                प्रौद्योगिकी के क्षेत्र में शिक्षा को सुलभ बनाने का सपना देखा
-                है। उनका दृष्टिकोण शिक्षा और अनुसंधान के माध्यम से हर विद्यार्थी
-                को सशक्त बनाना है।
+                तरंग एक ऐसी दुनिया बनाने की कल्पना करता है जहां विज्ञान हर
+                व्यक्ति के लिए सुलभ और उपयोगी हो। आधुनिक प्रयोगशालाओं के माध्यम
+                से, हम शिक्षा और अनुसंधान को उत्तम बनाने का प्रयास करते हैं।
               </p>
-              <blockquote>
-                “ज्ञान ही शक्ति है, और विज्ञान इसका सबसे बड़ा स्रोत।”
-              </blockquote>
-              <!-- Social Media Section -->
-              <div class="founder-social">
-                <div class="social-links">
-                  <a
-                    href="https://www.linkedin.com/in/आलोक-तेजस"
-                    target="_blank"
-                    class="social-btn linkedin"
-                  >
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                  </a>
-                  <a
-                    href="https://twitter.com/founder"
-                    target="_blank"
-                    class="social-btn twitter"
-                  >
-                    <i class="fab fa-twitter"></i> Github
-                  </a>
-                  <a
-                    href="https://facebook.com/founder"
-                    target="_blank"
-                    class="social-btn facebook"
-                  >
-                    <i class="fab fa-facebook"></i> Facebook
-                  </a>
-                  <a
-                    href="https://aaloktejs24.github.io/Aalok-Tejas/"
-                    target="_blank"
-                    class="social-btn website"
-                  >
-                    <i class="fas fa-globe"></i> Personal Website
-                  </a>
+              <div class="vision_button">
+                <button>अधिक जानकारी →</button>
+              </div>
+            </div>
+
+            <!-- Mission Card -->
+            <div class="mission">
+              <h2>हमारा मिशन</h2>
+              <p>
+                हमारा मिशन ऐसी दुनिया का निर्माण करना है जहां विज्ञान की शिक्षा
+                सभी के लिए सुलभ हो। हम छात्रों को अपने अनुसंधान और ज्ञान को
+                प्रोत्साहित करने का मौका प्रदान करते हैं।
+              </p>
+              <div class="mission_button" style="margin-top: 45px">
+                <button>अधिक जानकारी →</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="founder-section">
+          <div class="container">
+            <!-- Founder Details -->
+            <div class="founder-content">
+              <div class="founder-image">
+                <img src="founder.png" alt="Founder Image" />
+              </div>
+              <div class="founder-details">
+                <h1>हमारे संस्थापक</h1>
+                <p>
+                  <strong style="color: #28a745">आलोक तेजस</strong>, 'तरंग' के
+                  संस्थापक, एक प्रेरक वैज्ञानिक और शिक्षक हैं। उन्होंने विज्ञान
+                  और प्रौद्योगिकी के क्षेत्र में शिक्षा को सुलभ बनाने का सपना
+                  देखा है। उनका दृष्टिकोण शिक्षा और अनुसंधान के माध्यम से हर
+                  विद्यार्थी को सशक्त बनाना है।
+                </p>
+                <blockquote>
+                  “ज्ञान ही शक्ति है, और विज्ञान इसका सबसे बड़ा स्रोत।”
+                </blockquote>
+                <!-- Social Media Section -->
+                <div class="founder-social">
+                  <div class="social-links">
+                    <a
+                      href="https://www.linkedin.com/in/आलोक-तेजस"
+                      target="_blank"
+                      class="social-btn linkedin"
+                    >
+                      <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a
+                      href="https://twitter.com/founder"
+                      target="_blank"
+                      class="social-btn twitter"
+                    >
+                      <i class="fab fa-twitter"></i> Github
+                    </a>
+                    <a
+                      href="https://facebook.com/founder"
+                      target="_blank"
+                      class="social-btn facebook"
+                    >
+                      <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                    <a
+                      href="https://aaloktejs24.github.io/Aalok-Tejas/"
+                      target="_blank"
+                      class="social-btn website"
+                    >
+                      <i class="fas fa-globe"></i> Personal Website
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="team-section">
-        <div class="container">
-          <h1 class="team-title">हमारी टीम</h1>
-          <p class="team-subtitle">
-            यह हमारी समर्पित टीम है, जो 'तरंग' के दृष्टिकोण को साकार करने के लिए
-            निरंतर प्रयासरत है। हमारे विशेषज्ञ विज्ञान और शिक्षा में बेहतरीन
-            योगदान दे रहे हैं।
-          </p>
-          <div class="team-grid">
-            <!-- Team Member 1 -->
-            <div class="team-card">
-              <img src="member1.jpg" alt="Team Member 1" />
-              <h3>रवि शंकर</h3>
-              <p>प्रोजेक्ट मैनेजर</p>
-              <div class="social-linkst">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+        </section>
+        <section class="team-section">
+          <div class="container">
+            <h1 class="team-title">हमारी टीम</h1>
+            <p class="team-subtitle">
+              यह हमारी समर्पित टीम है, जो 'तरंग' के दृष्टिकोण को साकार करने के
+              लिए निरंतर प्रयासरत है। हमारे विशेषज्ञ विज्ञान और शिक्षा में
+              बेहतरीन योगदान दे रहे हैं।
+            </p>
+            <div class="team-grid">
+              <!-- Team Member 1 -->
+              <div class="team-card">
+                <img src="teamm.svg" alt="Team Member 1" />
+                <h3>रवि शंकर</h3>
+                <p>प्रोजेक्ट मैनेजर</p>
+                <div class="social-linkst">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
               </div>
-            </div>
 
-            <!-- Team Member 2 -->
-            <div class="team-card">
-              <img src="member2.jpg" alt="Team Member 2" />
-              <h3>नीलिमा गुप्ता</h3>
-              <p>फ्रंटएंड डेवेलपर</p>
-              <div class="social-linkst">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+              <!-- Team Member 2 -->
+              <div class="team-card">
+                <img src="teamf.svg" alt="Team Member 2" />
+                <h3>नीलिमा गुप्ता</h3>
+                <p>फ्रंटएंड डेवेलपर</p>
+                <div class="social-linkst">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
               </div>
-            </div>
 
-            <!-- Team Member 3 -->
-            <div class="team-card">
-              <img src="member3.jpg" alt="Team Member 3" />
-              <h3>अमित कुमार</h3>
-              <p>डेटा साइंटिस्ट</p>
-              <div class="social-linkst">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+              <!-- Team Member 3 -->
+              <div class="team-card">
+                <img src="teamm.svg" alt="Team Member 3" />
+                <h3>अमित कुमार</h3>
+                <p>डेटा साइंटिस्ट</p>
+                <div class="social-linkst">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
               </div>
-            </div>
 
-            <!-- Team Member 4 -->
-            <div class="team-card">
-              <img src="member4.jpg" alt="Team Member 4" />
-              <h3>सुमन वर्मा</h3>
-              <p>कंटेंट क्रिएटर</p>
-              <div class="social-linkst">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+              <!-- Team Member 4 -->
+              <div class="team-card">
+                <img src="teamm.svg" alt="Team Member 4" />
+                <h3>सुमन वर्मा</h3>
+                <p>कंटेंट क्रिएटर</p>
+                <div class="social-linkst">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+      <div
+        id="prayogkaksha"
+        class="section"
+        style="min-height: 100vh; background-color: #f00833"
+      ></div>
+      <div
+        id="prakashan"
+        class="section"
+        style="min-height: 100vh; background-color: #b4e408"
+      ></div>
+      <div
+        id="sansadhan"
+        class="section"
+        style="min-height: 100vh; background-color: #ff0040"
+      ></div>
+      <div
+        id="pariyojnayen"
+        class="section"
+        style="min-height: 100vh; background-color: #0410f4"
+      ></div>
+      <div
+        id="aapkasamuh"
+        class="section"
+        style="min-height: 100vh; background-color: #64f603"
+      ></div>
+      <div
+        id="samiksha"
+        class="section"
+        style="min-height: 100vh; background-color: #24d26f"
+      ></div>
+      <div
+        id="chitrashala"
+        class="section"
+        style="min-height: 100vh; background-color: #e20d38"
+      ></div>
+      <div
+        id="anusandhannaitidisa"
+        class="section"
+        style="min-height: 100vh; background-color: #07c0ea"
+      ></div>
+      <div
+        id="navacharnvicharmanch"
+        class="section"
+        style="min-height: 100vh; background-color: #e20e86"
+      ></div>
+      <div
+        id="upkaranpustika"
+        class="section"
+        style="min-height: 100vh; background-color: #3421dd"
+      ></div>
+      <div
+        id="nirdharitprayog"
+        class="section"
+        style="min-height: 100vh; background-color: #aff008"
+      ></div>
+      <div
+        id="samachar"
+        class="section"
+        style="min-height: 100vh; background-color: #ff9900"
+      ></div>
       <footer
         style="background-color: #0056b3; color: #ffffff; padding: 30px 20px"
       >

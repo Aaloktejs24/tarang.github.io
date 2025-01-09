@@ -33,6 +33,26 @@ window.addEventListener('scroll', () => {
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
 });
 
+// Add event listeners to all navbar links
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+
+        const sectionId = link.getAttribute('data-section'); // Get the target section ID
+
+        // Hide all sections
+        document.querySelectorAll('.section').forEach(section => {
+            section.classList.remove('active');
+        });
+
+        // Show the target section
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+            targetSection.classList.add('active');
+        }
+    });
+});
+
 const carouselImages = document.querySelector('.carousel-images');
 const totalImages = document.querySelectorAll('.carousel-item').length;
 
