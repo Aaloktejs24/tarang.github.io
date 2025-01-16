@@ -100,8 +100,8 @@ body {
     z-index: 4;
     background: #003d80;
     color: white;
-    gap: 30px;
     width: 100vw;
+    max-width: 400px;
     height: 100vh;
     position: fixed;
     transform: translateX(-100%);
@@ -122,21 +122,49 @@ body {
     padding: 0px 4vw;
 }
 
-.sidebar__item-country-info img {
-    height: 21px;
-    width: auto;
-    border: #28a745 2px solid;
-    padding: 1px;
-    background-color: #f9f9f9;
-}
-
 
 .sidebarlogo {
     height: 36px;
     width: auto;
-    border: #0056b3 3px solid;
+    border: #28a745 3px solid;
     border-radius: 50%;
     display: block;
+}
+
+.sidebar-menu {
+    margin-top: 30px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.sidebar-menu::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, and Edge */
+}
+
+.sidebar-list {
+    list-style: none;
+    color: white;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.0833333333vw;
+}
+
+.sidebar-list a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.sidebar-list a:hover {
+    background-color: #28a745;
 }
 
 /*navigation menu*/
